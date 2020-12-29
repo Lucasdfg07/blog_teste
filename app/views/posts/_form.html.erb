@@ -1,0 +1,17 @@
+<%= form_with(model: post, local: true) do |f| %>
+  <div class="field">
+    <%= f.text_field :title, placeholder: 'Título' %>
+  </div>
+
+  <div class="field">
+    <%= f.text_field :description, placeholder: 'Descricão' %>
+  </div>
+
+  <div class="field">
+    <%= f.file_field :image %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
